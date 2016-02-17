@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let imagePicker = UIImagePickerController()
+    
+    
     @IBOutlet var imageView: UIImageView?
+    
     
     @IBAction func takePhoto(sender: UIButton) {
         
@@ -22,6 +27,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        imagePicker.delegate = self
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
