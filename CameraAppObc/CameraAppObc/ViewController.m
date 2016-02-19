@@ -5,6 +5,8 @@
 //  Created by Nicholas Jurden on 2/18/16.
 //  Copyright © 2016 Nicholas Jurden. All rights reserved.
 //
+//  based on http://www.appcoda.com/ios-programming-camera-iphone-app/
+//
 
 #import "ViewController.h"
 
@@ -66,6 +68,11 @@
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
+
+
+/////*************************************************************************************///
+/////****************************Code Added by Cole Jurden********************************///
+/////*************************************************************************************///
 - (IBAction)savePhoto:(id)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Confirm"
                                                                    message:@"Are you sure you want to save?"
@@ -85,6 +92,10 @@
     
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+/////*************************************************************************************///
+/////*************************************************************************************///
+/////*************************************************************************************///
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
