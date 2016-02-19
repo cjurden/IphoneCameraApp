@@ -14,5 +14,6 @@
 
 - (IBAction)takePhoto:  (UIButton *)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;
+- (IBAction)savePhoto:(UIButton *)sender;
 
 @end

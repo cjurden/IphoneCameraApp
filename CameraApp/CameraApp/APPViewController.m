@@ -62,6 +62,10 @@
     
 }
 
+- (IBAction)savePhoto:(UIButton *)sender{
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, nil, nil);
+}
+
 #pragma mark - Image Picker Controller delegate methods
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EUu-vS-dTs">
+            <objects>
+                <viewController id="2yB-Ax-14f" customClass="APPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jvj-t5-FJp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qY-h5-E9K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dpP-Pc-iJi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="muO-cW-n7f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blp-CI-hkg">
+                                <rect key="frame" x="46" y="641" width="33" height="30"/>
+                                <state key="normal" title="Take"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="2yB-Ax-14f" eventType="touchUpInside" id="UdS-Ba-jLO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btb-yT-IKe">
+                                <rect key="frame" x="185" y="641" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="2yB-Ax-14f" eventType="touchUpInside" id="tUP-bN-88b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1r-PW-zTf">
+                                <rect key="frame" x="333" y="641" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="2yB-Ax-14f" eventType="touchUpInside" id="t9P-VT-uw6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="btb-yT-IKe" firstAttribute="leading" secondItem="blp-CI-hkg" secondAttribute="trailing" constant="106" id="67z-0D-hsn"/>
+                            <constraint firstItem="Q1r-PW-zTf" firstAttribute="leading" secondItem="btb-yT-IKe" secondAttribute="trailing" constant="104" id="6Im-cV-Ea3"/>
+                            <constraint firstItem="blp-CI-hkg" firstAttribute="top" secondItem="muO-cW-n7f" secondAttribute="bottom" constant="61" id="99A-rU-Sam"/>
+                            <constraint firstItem="btb-yT-IKe" firstAttribute="baseline" secondItem="Q1r-PW-zTf" secondAttribute="baseline" id="Ihy-iH-fJ5"/>
+                            <constraint firstItem="8qY-h5-E9K" firstAttribute="top" secondItem="blp-CI-hkg" secondAttribute="bottom" constant="65" id="Mj3-Mx-Rmk"/>
+                            <constraint firstItem="muO-cW-n7f" firstAttribute="leading" secondItem="dpP-Pc-iJi" secondAttribute="leading" id="Xyl-8Z-I28"/>
+                            <constraint firstItem="btb-yT-IKe" firstAttribute="baseline" secondItem="blp-CI-hkg" secondAttribute="baseline" id="c4o-Gu-d5m"/>
+                            <constraint firstAttribute="trailing" secondItem="muO-cW-n7f" secondAttribute="trailing" id="jWw-QN-YGz"/>
+                            <constraint firstItem="muO-cW-n7f" firstAttribute="top" secondItem="dpP-Pc-iJi" secondAttribute="top" id="mm5-vf-sRd"/>
+                            <constraint firstItem="muO-cW-n7f" firstAttribute="centerX" secondItem="btb-yT-IKe" secondAttribute="centerX" id="nJU-AU-TMF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="imageView" destination="muO-cW-n7f" id="LbC-wF-LJc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ijh-JE-Wug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="362"/>
+        </scene>
+    </scenes>
+</document>
