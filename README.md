@@ -4,8 +4,7 @@ App based on an AppCoda demo recreated for a homework assignment in XCode 7 for 
 Original App tutorial found [here](http://www.appcoda.com/ios-programming-camera-iphone-app/)
 
 ####Sensors Used
-*Camera
-  *The entire app is based around the camera. The app defines the camera as a source for a `UIImagePickerController`, a controller that, as the apple documentation states: 
+*Camera* the entire app is based around the camera. The app defines the camera as a source for a `UIImagePickerController`, a controller that, as the apple documentation states: 
   >manages customizable, system-supplied user interfaces for taking pictures and movies on supported devices, and for choosing saved images and movies for use in your app. An image picker controller manages user interactions and delivers the results of those interactions to a delegate object
   in this app, the delegate that the AppCoda app used (and that I kept the same) was the ViewController, the view of the app that is displayed after the launch screen and occupies the full screen. In future renditions I might only choose the ImageView (where the pictures are displayed on the main screen) to keep the buttons in one place. 
   
