@@ -14,5 +14,5 @@ The user may choose to use the camera, in which case the image that they take us
 ####My Modifications to the App
 This app was created in a prior version of Xcode. I chose to rewrite the app in Xcode 7 for iOS 9 devices. The main change required here was the use of a Main.storyboard as opposed to the .xib files used in past versions. Most of the logic remained the same. In addition to this refactoring, I added a feature to store the image taken with the camera. If the user taps the "save" button, the picture will be added to the user's camera roll following an alert to confirm the user's decision to save. 
 ####Screenshots
-![Alert](/alert.png)
-![Main](/main.png)
+![Main](/main.png "Main Screen")
+![Alert](/alert.png "Alert Screen")
